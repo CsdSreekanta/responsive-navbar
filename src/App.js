@@ -8,11 +8,12 @@ import Home from './components/Home/Home';
 import Contact from './components/Contact/Contact';
 import Service from './components/Service/Service';
 import NotFound from './components/NotFound/NotFound';
+import NavBar from './components/NavBar/NavBar';
 
 function App() {
   return (
     <div className="App">
-      <Header></Header>
+      {/* <NavBar></NavBar> */}
       <Routes>
          <Route path="/" element={<Home></Home>}></Route>
          <Route path="/home" element={<Home></Home>}></Route>
@@ -21,7 +22,7 @@ function App() {
          <Route path="/contact" element={<Contact></Contact>}></Route>
          <Route path="*" element={<NotFound></NotFound>}></Route>
       </Routes>
-      <DashBoard></DashBoard>
+      {/* <DashBoard></DashBoard> */}
     
    
     </div>

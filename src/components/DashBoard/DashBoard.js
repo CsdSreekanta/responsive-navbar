@@ -1,5 +1,7 @@
 import React from 'react';
 import { LineChart, Line, XAxis, YAxis,Tooltip,CartesianGrid} from 'recharts';
+import Link from '../Link/Link';
+import NavBar from '../NavBar/NavBar';
 
 
 const DashBoard = () => {
@@ -50,7 +52,7 @@ const DashBoard = () => {
       
     return (
         <div>
-            <h1>This is my dashboard</h1>
+        <NavBar></NavBar>
             <LineChart width={800} height={500} data={data}>
                 <Line type="monotone" dataKey="totalClient"></Line>
                 <CartesianGrid stroke="#ccc" strokeDasharray="5 5" />

@@ -7,7 +7,7 @@ const Header = () => {
         <div>
             <NavBar></NavBar>
             <h2 className='text-4xl font-bold'>Welcome to our counselling website</h2>
-            <Pricing></Pricing>
+          
         </div>
     );
 };
